@@ -32,12 +32,17 @@ public class Deck {
 
 
 	
+	public ArrayList<Card> getCards() {
+		return cards;
+	}
+
 	public Card Draw() throws DeckException
 	{
 		if (cards.size() == 0)
 		{
 			throw new DeckException(eExceptionType.EmptyDeck, this);
 		}
+		
 		return cards.remove(0);
 	}
 	

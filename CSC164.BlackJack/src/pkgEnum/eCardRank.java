@@ -10,4 +10,9 @@ public enum eCardRank {
 	private eCardRank(int iCardRank) {
 		this.iCardRank = iCardRank;
 	}
+
+	public int getiCardRank() {
+		return iCardRank;
+	}
+	
 }
